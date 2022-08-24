@@ -1,2 +1,3 @@
-##0x00. Python - Hello, World
-#0-run
+##0x00-Python-Hello_World##
+#0-run#
+#1-run_inline#
