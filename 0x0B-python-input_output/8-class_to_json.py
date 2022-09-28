@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A function that returns a dict simple struct for json serializtion of object"""
+"""A function that returns json file"""
 
 
 def class_to_json(obj):
