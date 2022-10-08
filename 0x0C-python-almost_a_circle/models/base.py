@@ -1,23 +1,25 @@
 #!/usr/bin/python3
-"""Defining a class of Base"""
+
+"""Defines a base model class."""
 import json
 import csv
 import turtle
 
 
 class Base:
-    """Base clase
-
-    Representation of all classes of project Almost a circle
-
-    Private class attribute:
-        __nb_objects(int): Numbers indendation Base
-
+    """Base model.
+    This Represents the "base" for all other classes in project 0x0C*.
+    Private Class Attributes:
+        __nb_object (int): Number of instantiated Bases.
     """
+
     __nb_objects = 0
 
     def __init__(self, id=None):
-        """attribute indendation"""
+        """Initialize a new Base.
+        Args:
+            id (int): The identity of the new Base.
+        """
         if id is not None:
             self.id = id
         else:
@@ -26,10 +28,9 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """Updating Base with json file format
-
-        args:
-            list_dictionaries
+        """Return the JSON serialization of a list of dicts.
+        Args:
+            list_dictionaries (list): A list of dictionaries.
         """
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"

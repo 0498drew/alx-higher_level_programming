@@ -18,7 +18,7 @@ from models.square import Square
 
 
 class TestBase_instantiation(unittest.TestCase):
-    """Unittests for testing instantiation of the Base class"""
+    """Unittests for testing instantiation of the Base class."""
 
     def test_no_arg(self):
         b1 = Base()
@@ -102,6 +102,7 @@ class TestBase_instantiation(unittest.TestCase):
     def test_two_args(self):
         with self.assertRaises(TypeError):
             Base(1, 2)
+
 
 class TestBase_to_json_string(unittest.TestCase):
     """Unittests for testing to_json_string method of Base class."""
