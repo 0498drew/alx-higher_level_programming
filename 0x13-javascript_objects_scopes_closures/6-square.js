@@ -6,8 +6,8 @@ module.exports = class Square extends SquareModel {
     super(size, size);
   }
 
-  charPrint (c) {
-    this.print(c);
+  charPrint (x) {
+    this.print(x);
   }
 };
 ~
